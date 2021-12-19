@@ -1,0 +1,16 @@
+ma/ac/emi/ginfo/controller/ProfesseurController.class
+ma/ac/emi/ginfo/model/Personne.class
+ma/ac/emi/ginfo/model/Professeur.class
+ma/ac/emi/ginfo/repository/CompteRepository.class
+ma/ac/emi/ginfo/model/Note.class
+ma/ac/emi/ginfo/repository/ProfesseurRepository.class
+ma/ac/emi/ginfo/model/Compte.class
+ma/ac/emi/ginfo/repository/PersonneRepository.class
+ma/ac/emi/ginfo/repository/StudentRepository.class
+ma/ac/emi/ginfo/repository/MatiereRepository.class
+ma/ac/emi/ginfo/GestionNotesApplication.class
+ma/ac/emi/ginfo/repository/NoteRepository.class
+ma/ac/emi/ginfo/model/Student.class
+ma/ac/emi/ginfo/model/Matiere.class
+ma/ac/emi/ginfo/model/GradeType.class
+ma/ac/emi/ginfo/model/PK.class

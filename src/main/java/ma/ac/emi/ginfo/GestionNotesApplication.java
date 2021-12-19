@@ -183,7 +183,6 @@ public class GestionNotesApplication {
 			nr.findAll().forEach(System.out::println);
 
 			System.out.println("-----------Fin Execution du programme------------");
-			new Scanner(System.in).next();
 		};
 	}
 
