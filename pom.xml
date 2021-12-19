@@ -9,6 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ma.ac.emi</groupId>
+	<packaging>war</packaging>
 	<artifactId>GestionNotes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>GestionNotes</name>
