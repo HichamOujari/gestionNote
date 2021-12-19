@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8" />
+<title>Professeurs</title>
+</head>
+<body>
+	<div id="home-main-content">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Liste des Professeurs</div>
+			<form th:action="@{/chercherProfesseur}" method="get">
+				<table class="table table-striped">
+					<tr>
+						<td><label>Nom professeur</label>
+						</td>
+						<td><input type="text" name="nomProfesseur" />
+						</td>
+						<td><button class="btn btn-primary" type="search">chercher</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<form th:action="@{/ajouterprofesseur}" method="get">
+				<table class="table table-striped">
+					<tr>
+						<td><button class="btn btn-primary" type="search">Ajouter Professeur</button>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<div class="panel-body">
+				<table class="table table-striped">
+					<tr>
+						<th>Matricule</th>
+						<th>Nom</th>
+						<th>Prenom</th>
+						<th>Date Naissance</th>
+						<th>Numero Somme</th>
+						<th>Grade</th>
+					</tr>
+					<tr th:each="e:${listProfesseurs}">
+						<td th:text="${e.Matricule}"></td>
+						<td th:text="${e.nom}"></td>
+						<td th:text="${e.prenom}"></td>
+						<td th:text="${e.date_naissance}"></td>
+						<td th:text="${e.numSomme}"></td>
+						<td th:text="${e.grade}"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

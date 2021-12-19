@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8" />
+<title>Login</title>
+</head>
+<body>
+	<div id="home-main-content">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Ajouter Professeur</div>
+			<div class="panel-body">
+				<form th:action="@{/ajouterprofesseur}" method="post">
+					<div class="panel-heading">
+						<div class="form-group">
+							<label class="control-label">Matricule :</label> <input type="number"
+								name="matricule" th:value="${matricule}" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label class="control-label">Nom :</label> <input
+								type="text" name="nom" th:value="${nom}" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label class="control-label">Prenom :</label> <input
+								type="text" name="note" th:value="${prenom}" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label class="control-label">Date Naissance :</label> <input
+								type="date" name="datenaissance" th:value="${datenaissance}" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label class="control-label">Numero Somme :</label> <input
+								type="number" name="numSomme" th:value="${numSomme}" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label class="control-label">Grade :</label> <input
+								type="text" name="grade" th:value="${grade}" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label class="control-label">Email :</label> <input
+								type="email" name="email" th:value="${email}" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label class="control-label">Password :</label> <input
+								type="password" name="password" th:value="${password}" class="form-control" />
+						</div>
+						<div class="form-group">
+							<button type="submit" class="btn btn-primary">Ajouter</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
